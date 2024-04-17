@@ -1,0 +1,16 @@
+@use '../../styles'; // Inkludera styles.scss
+
+main {
+    @include styles.center-element;
+
+}
+
+#imageContainer {
+    width: 20%;
+    height: 50%;
+
+}
+
+#spelarbild {
+    object-fit: contain;
+}
