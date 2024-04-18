@@ -1,7 +1,6 @@
 @use '../../styles'; // Inkludera styles.scss
 
-
-#about {
+main {
     @include styles.center-element;
-    padding: 1em;
 }
+

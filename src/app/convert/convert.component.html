@@ -1,3 +1,54 @@
 <main>
-    
+    <h1>Konvertera enheter</h1>
+
+    <!-- Meter och fot -->
+    <div id="length">
+        <h1>Meter och Fot</h1>
+
+        <label for="meter">Meter: </label>
+        <input type="number" name="meter" id="meter" [(ngModel)]="meter"><br>
+
+        <label for="fot">Fot: </label>
+        <input type="number" name="fot" id="fot" [(ngModel)]="fot"><br>
+
+        <div class="convertDiv">
+            <p>Meter till fot</p>
+            <button class="btn" (click)="metToFot()"><strong>Konvertera</strong></button>
+
+        </div>
+        <div class="convertDiv">
+            <p>Fot till meter</p>
+            <button class="btn" (click)="fotToMet()"><strong>Konvertera</strong></button>
+        </div>
+
+        <div>
+            <p>Resultat: {{ lengthResult }}</p>
+        </div>
+    </div>
+
+    <!--  Celcius och fahrenheit -->
+    <div id="temperature">
+        <h1>Celcius och Fahrenheit</h1>
+        <label for="celcius">Celcius: </label>
+        <input type="number" name="celcius" id="celcius" [(ngModel)]="celcius"><br>
+
+        <label for="fahrenheit">Fahrenheit: </label>
+        <input type="number" name="fahrenheit" id="fahrenheit" [(ngModel)]="fahrenheit"><br>
+
+        <div class="convertDiv">
+            <p>Celcius till fahrenheit</p>
+            <button class="btn" (click)="celToFar()"><strong>Konvertera</strong></button>
+
+        </div>
+        <div class="convertDiv">
+            <p>Fahrenheit till celcius</p>
+            <button class="btn" (click)="farToCel()"><strong>Konvertera</strong></button>
+        </div>
+
+        <div>
+            <p>Resultat: {{ tempResult }}</p>
+        </div>
+    </div>
+
+
 </main>

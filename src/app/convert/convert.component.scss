@@ -1,0 +1,51 @@
+@use '../../styles'; // Inkludera styles.scss
+
+main {
+    
+    @include styles.center-element;
+}
+
+#length,
+#temperature {
+    width: 50%;
+    margin-top: 2em;
+    border: black solid 2px;
+    padding: 1em;
+    @include styles.center-element;
+
+    button {
+        border-radius: 10px;
+        @include styles.h3-styles;
+        border: none;
+        padding: 2;
+        box-shadow: 3px -3px black;
+    }
+    button:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    input {
+        width: 50%;
+        border-radius: 15px;
+        @include styles.h3-styles;
+        border: none;
+        padding: 3px;
+    }
+
+    label {
+        @include styles.h3-styles;
+
+    }
+
+    p {
+        @include styles.h3-styles;
+
+    }
+
+    .convertDiv {
+        @include styles.center-element;
+
+    }
+}

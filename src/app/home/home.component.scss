@@ -3,14 +3,21 @@
 main {
     @include styles.center-element;
 
+    article {
+        @include styles.center-element;
+        width: 50%;
+    }
+
 }
 
 #imageContainer {
-    width: 20%;
+    max-width: 20%;
     height: 50%;
 
 }
 
 #spelarbild {
     object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
