@@ -2,5 +2,11 @@
 
 main {
     @include styles.center-element;
-}
+    background-color: linear-gradient(#9c2020, #e2d6d6);
 
+    article {
+        @include styles.center-element;
+        width: 50%;
+    }
+
+}

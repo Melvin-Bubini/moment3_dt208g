@@ -11,13 +11,34 @@ main {
 }
 
 #imageContainer {
-    max-width: 20%;
-    height: 50%;
-
+    max-width: 25%;
+    margin: 3em 0 1em 0;
 }
 
 #spelarbild {
     object-fit: contain;
     width: 100%;
     height: 100%;
+    border-radius: 2%;
+    box-shadow: 14px -10px 20px 0px black;
+    transition: transform 1s ease;
 }
+
+#spelarbild:hover {
+    transform: scale(1.1);
+    /* Zooma in till 110% av originalstorleken */
+}
+
+#spelarbild:not(:hover) {
+    transform: scale(1);
+    /* Återgå till originalstorlek när musen inte längre hovrar över bilden */
+}
+
+@keyframes zoom-in-animation {
+    from {
+      transform: scale(1); /* Ingen förändring från originalstorlek */
+    }
+    to {
+      transform: scale(1.1); /* Förstorning till 120% av originalstorleken */
+    }
+  }

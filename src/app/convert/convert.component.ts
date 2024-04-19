@@ -18,11 +18,11 @@ export class ConvertComponent {
   fot: number = 0
 
   metToFot(): void {
-    this.lengthResult = this.meter * 3.28084;
+    this.fot = this.meter * 3.28084;
   }
 
   fotToMet(): void {
-    this.lengthResult = this.fot * 0.3048;
+    this.meter = this.fot * 0.3048;
   }
 
 
@@ -34,10 +34,10 @@ export class ConvertComponent {
   fahrenheit: number = 0;
 
   celToFar(): void {
-    this.tempResult = (this.celcius * 9 / 5) + 32; 
+    this.fahrenheit = (this.celcius * 9 / 5) + 32; 
   }
 
   farToCel(): void {
-    this.tempResult = (this.fahrenheit - 32) * 5 / 9;
+    this.celcius = (this.fahrenheit - 32) * 5 / 9;
   }
 }
