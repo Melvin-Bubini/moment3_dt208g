@@ -72,11 +72,12 @@ $background-color-dark: darken($background-color, 40%);
     header,
     footer,
     nav,
-    .menu-btn {
+    .menu-btn,
+    nav {
         background-color: $main-color;
     }
 
-    body, .cv {
+    body {
         background-color: $background-color;
     }
 
@@ -85,15 +86,9 @@ $background-color-dark: darken($background-color, 40%);
     h2,
     li,
     ul,
-    .courseplan:hover,
     span,
-    label,
-    .formRubrik {
+    label {
         color: $text-color;
-    }
-
-    .courseplan {
-        color: $link-color;
     }
 }
 
@@ -102,11 +97,12 @@ $background-color-dark: darken($background-color, 40%);
     header,
     footer,
     nav,
-    .menu-btn {
+    .menu-btn,
+    nav {
         background-color: $main-color-dark;
     }
 
-    body, .cv {
+    body{
         background-color: $background-color-dark;
     }
 
@@ -115,10 +111,8 @@ $background-color-dark: darken($background-color, 40%);
     h2,
     li,
     ul,
-    .courseplan:hover,
     span,
-    label,
-    .formRubrik {
+    label {
         color: $text-color-dark;
     }
 }

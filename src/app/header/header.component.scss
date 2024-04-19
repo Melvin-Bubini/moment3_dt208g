@@ -127,7 +127,6 @@ header {
         display: none;
         z-index: 1000;
         width: 50%;
-        background-color: black;
     }
 
     nav ul {
@@ -150,9 +149,12 @@ header {
         @include styles.p-styles;
     }
 
-    nav a:hover {
+    nav a:hover,
+    nav a.current {
         cursor: pointer;
         color: white;
+        border-bottom: solid black 3px;
+
     }
 
     .menu-text {
